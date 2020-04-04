@@ -1,21 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Snake Game</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
+  <body>
+    <h1>Snake! &nbsp;&nbsp; Score:</h1>
+    <h1 class="score"></h1>
 
-<body>
-  <canvas class="canvas" height="600" width="600" style="background-color: #3e3e3e"></canvas>
-  <h1>Score: </h1>
-  <h1 class="score"></h1>
-  <script src="food.js"></script>
-  <script src="snake.js"></script>
-  <script src="board.js"></script>
-</body>
-
+    <button id="rules-btn" class="btn rules-btn">Show Rules</button>
+    <div id="rules" class="rules">
+      <h2>How To Play:</h2>
+      <p>
+        Use your narrow keys to move the snake to eat apple. When the snake runs
+        into itself, you lose the game.
+      </p>
+      <button id="close-btn" class="btn">Close</button>
+    </div>
+    <canvas class="canvas" height="600" width="600"></canvas>
+    <script src="food.js"></script>
+    <script src="snake.js"></script>
+    <script src="board.js"></script>
+  </body>
 </html>
